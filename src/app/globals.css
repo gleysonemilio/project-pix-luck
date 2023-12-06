@@ -84,5 +84,9 @@ body {
 
 header {
   width: 100%;
-  padding: 1rem;
+  padding: 2rem 0.9rem 1rem 0.9rem;
+}
+
+aside {
+  margin: 0 2rem;
 }
