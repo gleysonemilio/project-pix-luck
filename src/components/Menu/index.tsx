@@ -1,7 +1,9 @@
+import { Badge } from '@/components/ui/badge'
+
 export default function Menu() {
   return (
     <aside>
-      <ul>il</ul>
+      <Badge variant="outline">Badge</Badge>
     </aside>
   )
 }

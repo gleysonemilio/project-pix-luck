@@ -2,7 +2,7 @@
 
 // import ScrollCarousel from 'scroll-carousel-react'
 import { Carousel } from '@trendyol-js/react-carousel'
-import Card from '../Card'
+import CardRaffles from '../CardRaffles'
 
 const anyValue = () => {
   return Math.random() * (100 - 0) + 0
@@ -11,7 +11,8 @@ const anyValue = () => {
 const Array = [
   {
     title: 'Sorteio Iphone XR',
-    percentage: anyValue()
+    percentage: anyValue(),
+    date: '10/01/24'
   },
   {
     title: 'Sorteio Iphone 12',
@@ -27,8 +28,8 @@ export default function CreatedRaffles() {
   return (
     <aside>
       <Carousel show={2} slide={2} swiping={true}>
-        {Array.map(({ title, percentage }) => (
-          <Card title={title} percentage={percentage} />
+        {Array.map(({ title, percentage, date }) => (
+          <CardRaffles title={title} percentage={percentage} date={date || ''}/>
         ))}
       </Carousel>
     </aside>
