@@ -5,7 +5,7 @@ import { Label } from '@/components/ui/label'
 
 export default function Home() {
   return (
-    <main className="grid min-h-screen	place-content-center">
+    <main className="grid min-h-screen place-content-center">
       <div className="grid w-full max-w-sm items-center gap-1.5">
         <Label htmlFor="email">Email</Label>
         <Input type="email" id="email" placeholder="Email" />
